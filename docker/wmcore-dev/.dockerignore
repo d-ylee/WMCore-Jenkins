@@ -1,5 +1,6 @@
 *
 !TestScripts
 !ContainerScripts
+!UserScripts
 !entrypoint.sh
 !etc

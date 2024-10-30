@@ -21,4 +21,7 @@ pushd /home/cmsbld
 git clone https://github.com/dmwm/WMCore-Jenkins
 popd
 
+cp /home/cmsbld/etc/wmcore_dev_bashrc $HOME/.bashrc
+source $HOME/.bashrc
+
 $@

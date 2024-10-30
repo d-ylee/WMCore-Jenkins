@@ -56,6 +56,7 @@ RUN pip3 install --no-cache-dir --upgrade pip setuptools wheel && \
 
 ADD TestScripts /home/cmsbld/TestScripts
 ADD ContainerScripts /home/cmsbld/ContainerScripts
+ADD UserScripts /home/cmsbld/UserScripts
 ADD etc /home/cmsbld/etc
 ADD entrypoint.sh /entrypoint.sh
 

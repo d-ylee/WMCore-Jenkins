@@ -1,0 +1,1 @@
+alias devenv='source /home/cmsbld/UserScripts/setup-dev.sh'
