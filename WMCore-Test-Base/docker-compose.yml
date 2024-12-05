@@ -122,6 +122,7 @@ services:
       - *sudoersd
       - "${HOST_MOUNT_DIR}/home:/home/cmsbld"
       - "${HOST_MOUNT_DIR}/artifacts/:/home/cmsbld/artifacts/:Z"
+      - "/etc/grid-security:/etc/grid-security:ro"
   
   wmcore-unittests:
     <<: *wma-base
@@ -149,6 +150,7 @@ services:
       - *sudoersd
       - "${HOST_MOUNT_DIR}/home:/home/cmsbld"
       - "${HOST_MOUNT_DIR}/artifacts/:/home/cmsbld/artifacts/:Z"
+      - "/etc/grid-security:/etc/grid-security:ro"
     depends_on:
       couchdb:
         condition: service_healthy
